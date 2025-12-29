@@ -14,7 +14,7 @@ fn count_lines(string_holder: & str) -> usize {
 
 
 fn main() {
-    println!("Hello, world!");
+    println!("Please, enter your text. At the end, press the Enter button.");
 
 	let mut string_holder = String::new();
 
@@ -28,7 +28,7 @@ fn main() {
 	let words_count = count_words(& string_holder);
 	let lines_count = count_lines(& string_holder);
 
-	println!("You entered {string_holder} with a len of {chars_len} characters and words counter of {words_count}. Number of lines are {lines_count}.");
+	println!("You provided a text with a len of {chars_len} characters and words counter of {words_count}. Number of lines are {lines_count}.");
 }
 
 #[cfg(test)]
